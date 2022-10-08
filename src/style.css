@@ -54,6 +54,7 @@ body {
 }
 .first-row:hover {
   background: rgb(75, 77, 87);
+  cursor: pointer;
 }
 .del {
   background: rgb(90, 93, 96);
@@ -65,6 +66,7 @@ body {
 }
 .del:hover {
   background: rgb(113, 122, 131);
+  cursor: pointer;
 }
 .operator {
   background: #a98aca;
@@ -76,6 +78,7 @@ body {
 }
 .operator:hover {
   background: #a98aca8f;
+  cursor: pointer;
 }
 .biggi {
   grid-row: 4/6;
@@ -95,6 +98,7 @@ body {
 }
 .number:hover {
   background: rgb(75, 77, 87);
+  cursor: pointer;
 }
 .zero {
   grid-column: 1/3;

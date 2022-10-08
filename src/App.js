@@ -3,9 +3,9 @@ import Calculator from "./components/calculator";
 
 function App() {
   return (
-    <body>
+    <React.Fragment>
       <Calculator />
-    </body>
+    </React.Fragment>
   );
 }
 
