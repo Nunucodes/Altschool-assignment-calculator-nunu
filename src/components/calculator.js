@@ -162,6 +162,20 @@ class Calculator extends Component {
       });
     }
   };
+  // For delete
+  delete = () => {
+    let spread = [...this.state.Question];
+    spread.pop();
+    console.log(spread);
+    let newState = "";
+    for (let i = 0; i < spread.length; i++) {
+      newState += spread[i];
+      console.log(newState);
+    }
+    this.setState({
+      Question: newState,
+    });
+  };
 
   render() {
     return (
@@ -194,8 +208,8 @@ class Calculator extends Component {
             >
               x<sup>2</sup>
             </span>
-            <span className="button inverse del">
-              <sup>1</sup>/x
+            <span className="button inverse del" onClick={this.delete}>
+              del.
             </span>
             <span className="button square-root del" onClick={this.root}>
               &radic;
