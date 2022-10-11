@@ -7,7 +7,7 @@ class Calculator extends Component {
     super(props);
 
     this.state = {
-      Question: " ",
+      Question: "",
       Result: ``,
     };
     // console.log(16 ** (1 / 2));

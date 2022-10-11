@@ -13,6 +13,23 @@ body {
   text-shadow: 2px 2px 3px black;
   text-align: center;
   margin: 20px 0;
+  animation: animate 2s ease-in-out 1;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0);
+  }
+  80% {
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    transform: rotateZ(15deg);
+  }
 }
 .container {
   margin: 2rem auto;
@@ -23,20 +40,25 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .answer {
-  max-width: 100%;
+  width: 100%;
   text-align: right;
   height: 180px;
   font-size: 1.5em;
   color: #424242;
   /* text-shadow: 1px 1px 3px black; */
   padding: 30px 10px;
+  /* border: 1px solid red; */
 }
 .answer .question {
   font-size: 15px;
+  max-block-size: 150px;
+  /* border: 1px solid blue; */
+  word-wrap: break-word;
 }
 .answer .result {
   font-size: 30px;
   margin-top: 5px;
+  word-wrap: break-word;
 }
 .buttons {
   display: grid;
